@@ -12,6 +12,18 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+## our specifics
+
+There is a Dockerfile I don't have source controlled yet, because I need to refactor it to not source control the slack token and use an arg from docker run. But the intent would be you commit changes here, rebuild the docker image, and run it.
+
+Things I would like to get added:
+
+1. rally integration (just match on patterns like S1234 and provide the title of the story and a link)
+2. redis brain (from another docker container, of course)
+3. authorization (so we can automate more sensitive tasks, and only allow people with "permission" to run them)
+  * should be able to use slack as the identity provider
+
+
 ### Running the_dude Locally
 
 You can test your hubot by running the following, however some plugins will not
