@@ -14,7 +14,7 @@ has, etc!
 
 ## our specifics
 
-There is a Dockerfile I don't have source controlled yet, because I need to refactor it to not source control the slack token and use an arg from docker run. But the intent would be you commit changes here, rebuild the docker image, and run it.
+See danehammer/the_dude_docker for Dockerfile. Though the docker-compose.yml is incomplete, you need the HUBOT_GOOGLE_CSE_ID and HUBOT_GOOGLE_CSE_KEY keys I don't want to source control.
 
 Things I would like to get added:
 
